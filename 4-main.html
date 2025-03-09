@@ -1,0 +1,450 @@
+<!doctype html>
+
+<html lang="it" xmlns="http://www.w3.org/1999/xhtml">
+<div class="container">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>WinCenterTM</title>
+
+	
+<!--RICHIAMO SCRIPT PRINCIPALI-->
+<script type='text/javascript' src='../Contenuti/Script/jquery-1.7.1.js'></script> <!--ANIMAZIONI TILES-->
+<script type="text/javascript" src="../Contenuti/Script/jquery-ui.js"></script> <!--SPOSTAMENTO TILES-->
+<script type='text/javascript' src="../Contenuti/Script/metrojs.js"></script> <!--CONFIGURAZIONI ANIMAZIONI TILES-->
+<script type='text/javascript' src="../Contenuti/Script/metrojs.min2.js"></script>
+<script type="text/javascript" src="../Contenuti/Script/modernizr.js"></script>
+<script type="text/javascript" src="../Contenuti/Script/modernizr.custom.js"></script> 
+
+<!--RICHIAMO STILI CSS PRINCIPALI-->
+<link rel="stylesheet" type="text/css" href="../Contenuti/Style/metrojs.css"> <!--STILE PAGINA-->
+<link rel="stylesheet" type="text/css" href="../Contenuti/Style/normalize.css" />
+<link rel="stylesheet" type="text/css" href="../Contenuti/Style/component.css" />
+
+<!--STILE DEI CURSORI-->	
+<style>
+body, html{cursor: url(../Contenuti/Cursori/Norm.cur), auto; overflow-x:hidden; width:1300px; height:335px; margin:0;padding:0}
+a:link, a:visited, a:hover{cursor: url(../Contenuti/Cursori/Hand.cur), auto}
+div.panel{width:650px; float:left; padding-left:0px; padding-right:50px; margin-top:0px; position:absolute}
+div.home{width:650px; float:left; padding-left:0px; padding-right:50px; margin-top:0px; position:relative}
+</style>
+
+<!--ALTRI PARAMETRI ANIMAZIONI E SPOSTAMENTO TILES-->
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+//LISTA DELLE TILES CHE VENGONO RICHIAMATE QUI SOTTO
+//tile1= File Sharing
+//tile2= Sicurezza
+//tile3= Masterizzazione
+//tile4= Giochi
+//tile5= Programmazione
+//tile6= Internet
+//tile7= Office
+//tile8= Grafica
+//tile9= Plus!
+//tile10= Driver
+//tile11= Android
+//tile12= Multimedia
+//tile13= Messaggistica
+//tile14= Aggiornamenti
+//tile15= Indispensabili
+//tile16= Guide
+//tile17= Windows
+//tile18= Recovery
+//tile19= SOS1
+//tile20= SOS2
+
+//Lista delle Tiles presenti nel programma
+$("#tile1, #tile2, #tile3, #tile4, #tile5, #tile6, #tile7, #tile8, #tile9, #tile10, #tile11, #tile12, #tile13, #tile14, #tile15, #tile16, #tile17, #tile18, #tile19, #tile20").liveTile({ 
+    playOnHover:true,
+    repeatCount: 0,
+    delay: 0,
+	currentIndex: 0,
+    startNow:false //L'ANIMAZIONE ORA NON PARTE
+});
+$( ".tiles" ).sortable();
+$( ".tiles" ).disableSelection();
+$(".flip-list").not(".exclude").liveTile();
+});//]]>  
+</script>
+
+<!--SCORRIMENO ORIZZONTALE PER CAMBIO PAGINA-->
+<script type="text/javascript">$(document).ready(function(){$('a','#navigation').bind('click',function(event){event.preventDefault();var $a=$(this);var target=$a.attr('href');$a.addClass('current').parents('ul').find('a').not($a).removeClass('current');$('html, body').stop().animate({scrollLeft:$(target).offset().left,scrollTop:$(target).offset().top},900);});});</script>
+</head>
+</div>
+<!--FINE INTESTAZIONE DELLA PAGINA-->
+
+<!--CORPO DELLA PAGINA-->
+<body bgcolor="#333333" style="background-image: url('../Contenuti/Immagini/Sfondi/Vuoto.png'); background-attachment: fixed; font-family: segoe ui"; scroll="none"; link="RoyalBlue" alink="LimeGreen" vlink="SteelBlue">
+
+<!--PAGINA DELLA HOME-->
+<div id="home" class="home">
+<header>
+    <div class="site-title" style="color: SteelBlue; filter: Alpha(Opacity=50)">WinCenter™</div>
+</header>
+</div>
+
+<!--ELENCO PRINCIPALE TILES-->
+<!------------------------------------------------TILES: INDISPENSABILI------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile15" data-mode="flip" data-direction="horizontal" data-bounce="true" data-link="../Contenuti/HTML/Preload/indispensabili.html" style="height:95px; width:95px; position:absolute; visibility:show; left:20px; top:60px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Indispensabili.png" height="95px">
+<span class="tile-title"><b>Indispensabili</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #ffcb19">
+<p style="font-size:12px"><b>Una raccolta di programmi utili e indispensabili per il tuo computer</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------TILES: FILE SHARING--------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile1" data-mode="slide" data-direction="horizontal" data-bounce="true" data-link="../Contenuti/HTML/Preload/filesharing.html" style="height:95px; width:95px; position:absolute; visibility:show; left:120px; top:60px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE -->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/FileSharing.png" height="95px">
+<span class="tile-title"><b>File Sharing</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #009f3c">
+<p style="font-size:12px"><b>Programmi per la condivisione di file, come ad esempio eMule, uTorrent e molti altri...</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------TILES: SICUREZZA--------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile2" data-mode="flip" data-direction="horizontal" data-bounce="true" data-link="../Contenuti/HTML/Preload/sicurezza.html" style="height:95px; width:95px; position:absolute; visibility:show; left:220px; top:60px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Sicurezza.png" height="95px">
+<span class="tile-title"><b>Sicurezza</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #b44528">
+<p style="font-size:12px"><b>Una raccolta di programmi per mantenere la sicurezza nel proprio PC</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------TILES: MASTERIZZAZIONE------------------------------------------------>
+<!--Faccia 1-->
+<div class="live-tile" id="tile3" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/masterizzazione.html" style="height:95px; width:95px; position:absolute; visibility:show; left:320px; top:60px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Masterizzazione.png" height="95px">
+<span class="tile-title"><b>Masterizzazione</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #df0024">
+<p style="font-size:12px"><b>Programmi utili alla masterizzazione di CD, DVD e Blue-Ray</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------TILES: GIOCHI----------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile4" data-mode="flip" data-direction="horizontal" data-bounce="true" data-link="../Contenuti/HTML/Preload/giochi.html" style="height:95px; width:95px; position:absolute; visibility:show; left:420px; top:60px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Giochi.png" height="95px">
+<span class="tile-title"><b>Giochi</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #1ba0e1">
+<p style="font-size:12px"><b>Giochi per Windows e vari tool</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------TILES: INTERNET---------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile6" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/internet.html" style="height:95px; width:95px; position:absolute; visibility:show; left:520px; top:60px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Internet.png" height="95px">
+<span class="tile-title"><b>Internet</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #00abdc">
+<p style="font-size:12px"><b>Tutto il necessario per navigare in rete</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------TILES: OFFICE----------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile7" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/office.html" style="height:95px; width:95px; position:absolute; visibility:show; left:20px; top:160px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Office.png" height="95px">
+<span class="tile-title"><b>Office</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #eb3c00">
+<p style="font-size:12px"><b>Tutto per l'ufficio e i tuoi documenti</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------TILES: GRAFICA---------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile8" data-mode="slide" data-bounce="true" data-link="../Contenuti/HTML/Preload/grafica.html" style="height:95px; width:195px; position:absolute; visibility:show; left:120px; top:160px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Grafica.png" height="95px">
+<span class="tile-title"><b>Grafica</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #0c5fa1">
+<p style="font-size:12px"><b>Programmi per il fotoritocco e la grafica digitale</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------TILES: MULTIMEDIA--------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile12" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/multimedia.html" style="height:95px; width:95px; position:absolute; visibility:show; left:320px; top:160px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Multimedia.png" height="95px">
+<span class="tile-title"><b>Multimedia</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #f57900">
+<p style="font-size:12px"><b>Riproduttori multimediali per ogni esigenza, e non solo...</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------TILES: MESSAGGISTICA-------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile13" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/socialnetwork.html" style="height:95px; width:95px; position:absolute; visibility:show; left:420px; top:160px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Messaggistica.png" height="95px">
+<span class="tile-title"><b>Messaggistica</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #00a9ec">
+<p style="font-size:12px"><b>Messaggistica istantanea</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------TILES: AGGIORNAMENTI------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile14" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/aggiornamenti.html" style="height:95px; width:95px; position:absolute; visibility:show; left:520px; top:160px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Aggiornamenti.png" height="95px">
+<span class="tile-title"><b>Aggiornamenti</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #019601">
+<p style="font-size:12px"><b>Aggiornamenti di sistema, per il corretto funzionamento di Windows</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+
+<!--PAGINA FUNZIONI AVANZATE-->
+<div id="pagina2" class="panel">
+    <div class="site-title" style="color: SteelBlue; filter: Alpha(Opacity=30)">Avanzate&nbsp;</div>
+
+	
+<!----------------------------------------------------TILES: PLUS!------------------------------------------------------>
+<!--Faccia 1-->
+<div class="live-tile" id="tile9" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/plus.html" style="height:95px; width:95px; position:absolute; visibility:show; left:20px; top:60px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Plus.png" height="95px">
+<span class="tile-title"><b>Plus!</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #ef9c00">
+<p style="font-size:12px"><b>Raccolta speciale di sfondi per PC, set di caratteri, temi e altro</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------TILES: PROGRAMMAZIONE------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile5" data-mode="slide" data-stack="true" data-bounce="true" data-link="../Contenuti/HTML/Preload/programmazione.html" style="height:95px; width:195px; position:absolute; visibility:show; left:120px; top:60px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Programmazione.png" height="95px">
+<span class="tile-title"><b>Programmazione</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: black">
+<p style="font-size:12px"><b>Strumenti per editare sistemi e la creazione di programmi</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------TILES: DRIVERS---------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile10" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/drivers.html" style="height:95px; width:95px; position:absolute; visibility:show; left:320px; top:60px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Driver.png" height="95px">
+<span class="tile-title"><b>Driver</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #6e6e6e">
+<p style="font-size:12px"><b>Driver per il corretto funzionamento delle periferiche più comuni</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------TILES: BACKUP ----------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile11" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/backup.html" style="height:95px; width:95px; position:absolute; visibility:show; left:20px; top:160px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Backup.png" height="95px">
+<span class="tile-title" style="color:#f5f5f5"><b>Backup e Ripristino</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #00a8ec">
+<p style="font-size:12px"><b>Strumenti per il ripristino e backup dati da supporti fisici</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------TILES: WINDOWS---------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile17" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/windows.html" style="height:95px; width:95px; position:absolute; visibility:show; left:120px; top:160px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Windows.png" height="95px">
+<span class="tile-title"><b>Windows</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #0cb3ee">
+<p style="font-size:12px"><b>Strumenti utili per il tuo Sistema Operativo Windows</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------TILES: RECOVERY---------------------------------------------------->
+<!--Faccia 1-->
+<div class="live-tile" id="tile18" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/recovery.html" style="height:95px; width:95px; position:absolute; visibility:show; left:220px; top:160px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Recovery.png" height="95px">
+<span class="tile-title"><b>Recovery</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #3554d3">
+<p style="font-size:12px"><b>Sezione dedicata al ripristino di PC danneggiati e malfunzionanti</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------TILES: GUIDE------------------------------------------------------>
+<!--Faccia 1-->
+<div class="live-tile" id="tile16" data-mode="flip" data-bounce="true" data-link="../Contenuti/HTML/Preload/guide.html" style="height:95px; width:95px; position:absolute; visibility:show; left:320px; top:160px"> <!--INSERENDO IL COLORE NELLA CLASSE, SI SOVRASCRIVE IL COLORE PRINCIPALE-->  
+<div>
+<img src="../Contenuti/Immagini/Tiles/Guide.png" height="95px">
+<span class="tile-title"><b>Guide</b></span> <!--TITOLO DELLA TILE-->
+</div>
+<!--Faccia 2-->
+<div style="background-color: #4577a4">
+<p style="font-size:12px"><b>Guide e tutorial di vario genere</b></p>
+<span class="tile-title"></span>
+</div>
+</div>
+<!-----------------------------------------------------FINE TILES------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+
+</div>
+
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------------->
+<!--BARRA DELLE APPLICAZIONI-->
+<footer class="appbar">
+    <nav class="clear">
+	<ul class="appbar-buttons" id="navigation">
+	<li><a href="https://www.google.com/cse/publicurl?cx=006093634820944110503:9t3qbedk458" target="_blank" style="CURSOR: url(../Contenuti/Cursori/Text.cur)"><img src="../Contenuti/Immagini/Icone/Ricerca.png"  style="position: absolute; left:0px; width:280px; height:20px; border:0" alt="Esegui una ricerca"></a></li>
+	<li><a href="#home">
+	<img src="../Contenuti/Immagini/Icone/HomeLeft.png" onmouseover="this.src='../Contenuti/Immagini/Icone/HomeLeftON.png'"
+onmouseout="this.src='../Contenuti/Immagini/Icone/HomeLeft.png'" border="0" alt="Home" style="position:absolute; visibility:show; left:350px; top:5px; width: 50px;"/></a></li>
+	<li><a href="#home"> 
+	<!--pagina2-->
+	<li><a href="#pagina2">
+	<img src="../Contenuti/Immagini/Icone/HomeRight.png" onmouseover="this.src='../Contenuti/Immagini/Icone/HomeRightON.png'"
+onmouseout="this.src='../Contenuti/Immagini/Icone/HomeRight.png'" border="0" alt="Avanzate" style="position:absolute; visibility:show; left:405px; top:5px; width: 50px"/></a></li>
+	</ul>
+	</nav>
+	
+<!--Menu di apertura barra-->
+    <a class="etc" alt="Apri Barra delle Applicazioni">&bull;&bull;&bull;</a>
+    
+<div class="tray"><br>
+<section class="base-theme-options">
+<!--INTESTAZIONE FUNZIONI-->
+<span style="position:absolute; visibility:show; left:20px; top:0px; color: white"><h3>Funzioni Rapide:</h3></span>
+<!--VERSIONE DEL PROGRAMMA-->
+<span style="position:absolute; visibility:show; left:5px; top:95px; color: white; font-size: 12px; font-family: segoe ui">WinCenter™ 9.0</span>
+
+<!--LOGO INFORMAZIONI-->
+<a href="../Contenuti/HTML/RapidMenu/Changelog.html" style="CURSOR: url(../Contenuti/Cursori/Hand.cur)"><img src="../Contenuti/Immagini/Icone/Changelog.png" width="50" height="50" border="0" alt="WinCenter™
+Vedi le ultime novità del programma." style="position:absolute; visibility:show; left:20px; top:40px"></a>
+
+<!--GUIDA ALL'USO-->
+<a href="../Contenuti/HTML/RapidMenu/guida.html"><img src="../Contenuti/Immagini/Icone/help.png" width="50" height="50" border="0" alt="Consulta la guida al programma" style="position:absolute; right:360px; top:40px"></a>
+
+<!--FEEDBACK-->
+<a href="../Contenuti/HTML/RapidMenu/feed.html"><img src="../Contenuti/Immagini/Icone/Feed.png" width="50" height="50" border="0" alt="Segnala problema o lascia un commento" style="position:absolute; right:305px; top:40px"></a>
+
+<!--RICARICA PROGRAMMA-->
+<a href="restart.html"><img src="../Contenuti/Immagini/Icone/Restart.png" width="50" height="50" border="0" alt="Riesegui WinCenter™ dall'inizio." style="position:absolute; right:250px; top:40px"></a>
+
+<!--LETTORE MUSICALE-->
+<a href="../Contenuti/HTML/musica.html"><img src="../Contenuti/Immagini/Icone/Player.png" width="50" height="50" border="0" alt="Lettore Musicale." style="position:absolute; right:195px; top:40px"></a>
+
+<!--DISCLAIMER-->
+<a href="../Contenuti/HTML/RapidMenu/disclaimer.html"; style="CURSOR: url(../Contenuti/Cursori/Help.cur)"><img src="../Contenuti/Immagini/Icone/UAC.png" width="50" height="50" border="0" alt="Consulta i termini di servizio e d'utilizzo per WinCenter™" style="position:absolute; right:140px; top:40px"></a>
+
+<!--INFORMAZIONI PROGRAMMA-->
+<a href="../Contenuti/HTML/RapidMenu/Info/InfoWinCenter.exe"; style="CURSOR: url(../Contenuti/Cursori/Help.cur)"><img src="../Contenuti/Immagini/Icone/Info.png" width="50" height="50" border="0" alt="Informazioni su WinCenter™" 
+style="position:absolute; right:85px; top:40px"></a>
+
+<!--CHIUDI PROGRAMMA-->
+<a href="about:close"; style="CURSOR: url(../Contenuti/Cursori/Close.cur)"><img src="../Contenuti/Immagini/Icone/Power.png" width="50" height="50" border="0" alt="Esci da WinCenter™" style="position:absolute; right:30px; top:40px"></a>     
+</section>
+</div>      
+</footer> 
+
+
+<script type="text/javascript">
+        var metroJs,
+            appBar;
+        $(document).ready(function () {
+        });
+</script>
+
+<script type="text/javascript">        
+        
+        $(document).ready(function () {
+            var doBind = (typeof (window.bindAppBarKeyboard) === "undefined" || window.bindAppBarKeyboard);
+            appBar = $(".appbar").applicationBar({
+            });
+        });
+        
+</script>
+ 
+</body>
+</html>
